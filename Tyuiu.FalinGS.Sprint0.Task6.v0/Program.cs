@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Tyuiu.FalinGS.Sprint0.Task6.V0.Lib;
+
+namespace Tyuiu.FalinGS.Sprint0.Task6.v0
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numsArray = new int[] { 1, 2, 3, 4, 5 };
+
+            Console.WriteLine("Cумма элементов массива = " + DataService.AdditionArray(numsArray));
+
+            Console.WriteLine("Разность элементов массива = " + DataService.SubstractionArray(numsArray));
+
+            Console.WriteLine("Произведение элементов массива = " + DataService.MultiplicationArray(numsArray));
+
+            Console.ReadKey();
+        }
+    }
+}
